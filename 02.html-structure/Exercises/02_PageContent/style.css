@@ -1,0 +1,21 @@
+article h1 {
+  text-size-adjust: 28px;
+}
+
+article p {
+  font-style: italic;
+}
+
+p {
+  text-size-adjust: 24px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #cccccc;
+}
+
+section {
+  margin-left: 20px;
+}

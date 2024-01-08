@@ -1,0 +1,38 @@
+body {
+  width: 700px;
+  margin: 15px;
+  background-color: #e4e978;
+}
+
+article {
+  background-color: #f2f4c0;
+  padding: 15px;
+}
+
+/* First section */
+body article {
+  border: 1px solid #b2ad7d;
+  margin-bottom: 15px;
+}
+
+/* Second and third sectionas */
+section header,
+section article {
+  background-color: #f2f4c0;
+  font-style: italic;
+  border: 1px solid #b2ad7d;
+}
+
+section article p {
+  color: #4c7658;
+}
+
+section h2,
+section h1 {
+  background-color: #f2f4c0;
+  color: #4c7658;
+}
+
+section h1 {
+  font-size: 25px;
+}
