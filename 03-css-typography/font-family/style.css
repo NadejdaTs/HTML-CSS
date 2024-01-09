@@ -38,14 +38,14 @@ html {
   line-height: 1.2;
 }
 
-.example4{
+.example4 {
   font-size: 21px;
   /* text don`t wrap */
-  white-space: nowrap; 
+  white-space: nowrap;
   /* overflow: scroll; */
   overflow: hidden;
   text-overflow: ellipsis;
-  
+
   text-transform: capitalize;
   /* word-break: normal; */
   /* background-color: red; */
