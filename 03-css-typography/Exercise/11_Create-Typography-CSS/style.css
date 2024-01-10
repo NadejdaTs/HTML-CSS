@@ -2,6 +2,8 @@ body {
   font-family: Helvetica, sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: normal;
+  padding: 60px;
 }
 
 h1,
@@ -10,5 +12,36 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: sans-serif;
+  font-family: Georgia, sans-serif;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table th {
+  background-color: #cccccc;
+  text-align: left;
+}
+
+table tr:nth-child(odd) {
+  background-color: #f1f1f1;
+}
+
+th,
+td {
+  border: 1px solid #dfdfdf;
+}
+
+blockquote {
+  border-left: 1px solid rgb(221, 221, 221);
+  font-style: italic;
+  padding-left: 20px;
+  margin-left: 25px;
+}
+
+blockquote footer {
+  text-align: right;
 }
