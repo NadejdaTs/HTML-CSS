@@ -1,0 +1,65 @@
+body {
+  border-radius: 3px;
+  padding: 5px 10px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(6, 100px);
+  grid-template-rows: repeat(6, 100px);
+  grid-template-areas:
+    "head head head head head head"
+    "side content content content content content"
+    "foot foot foot foot foot foot";
+}
+
+header {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+aside ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 5px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: 5px 0px;
+  color: rgb(86, 40, 129);
+}
+
+header {
+  grid-area: head;
+}
+
+aside {
+  grid-area: side;
+  height: 12vh;
+}
+
+main {
+  grid-area: content;
+  height: 12vh;
+}
+
+footer {
+  grid-area: foot;
+  height: 1.5vh;
+  margin-top: 50px;
+}
+
+header,
+aside,
+main,
+footer {
+  background-color: rgb(181, 216, 255);
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+header,
+main,
+footer {
+  margin-right: 150px;
+}

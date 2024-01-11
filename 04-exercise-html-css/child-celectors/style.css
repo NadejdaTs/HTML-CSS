@@ -31,7 +31,7 @@ ul > li {
 .nth-example li {
   background-color: unset;
 }
-.nth-example li:nth-child(4n + 1){
+.nth-example li:nth-child(4n + 1) {
   /* .nth-example li:nth-child(odd){ */
-    background-color: green;
+  background-color: green;
 }

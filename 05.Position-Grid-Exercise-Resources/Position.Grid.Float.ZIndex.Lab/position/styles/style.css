@@ -59,14 +59,13 @@ body {
   /* left: 20px; */
 }
 
-
 /* FIXED example */
-.fixed{
+.fixed {
   background-color: lightpink;
   position: relative;
 }
 
-.fixed img{
+.fixed img {
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -75,19 +74,19 @@ body {
   right: 20px;
 }
 
-
 /* STICKY example */
-.sticky{
+.sticky {
   background-color: lightsalmon;
   /* height: 400px; */
   /* overflow: auto; */
 }
 
-.sticky p, .sticky-test p{
+.sticky p,
+.sticky-test p {
   font-size: 32px;
 }
 
-.sticky img{
+.sticky img {
   position: sticky;
   top: 40px;
 }
