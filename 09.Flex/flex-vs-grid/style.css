@@ -53,8 +53,8 @@ body {
   gap: 12px;
 }
 
-.container-flex .item{
-    /* width: calc((100% - 24px) / 3); */
-    width: 30%;
-    flex-grow: 1;
+.container-flex .item {
+  /* width: calc((100% - 24px) / 3); */
+  width: 30%;
+  flex-grow: 1;
 }

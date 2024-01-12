@@ -9,15 +9,15 @@ body {
   padding: 12px 32px;
 
   display: flex;
-  align-items: center; 
+  align-items: center;
 }
 
 .header .logo {
   margin-right: 50px;
 }
 
-.navigation{
-    margin-right: auto;
+.navigation {
+  margin-right: auto;
 }
 
 .navigation .list {
@@ -37,6 +37,6 @@ body {
   color: #fff;
 }
 
-.btn.btn-search{
-    margin-right: 12px;
+.btn.btn-search {
+  margin-right: 12px;
 }

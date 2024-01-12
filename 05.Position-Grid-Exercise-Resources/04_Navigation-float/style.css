@@ -1,0 +1,98 @@
+body {
+  font-family: Georgia, serif;
+  /* font-size: 16px; */
+  background-color: rgb(238, 238, 238);
+  /* width: 1000px; */
+  margin: 0 80px 80px 60px;
+  /* margin: auto; */
+}
+
+main {
+  display: inline-block;
+  width: 630px;
+}
+
+aside {
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 30px;
+}
+
+aside a {
+  color: rgb(24, 179, 24);
+}
+
+h1,
+h2 {
+  /* font-size: 1em; */
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+/* p {
+  font-size: 15px;
+  line-height: 1.2;
+} */
+
+section p:nth-child(even) {
+  width: 420px;
+}
+
+.site-title {
+  float: left;
+  margin-right: 380px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+
+header nav {
+  font-size: 30px;
+  border-bottom: 2px solid black;
+  /* display: inline-block; */
+  /* float: left; */
+  /* padding: 20px; */
+}
+
+.head-list li {
+  display: inline-block;
+  margin-top: 35px;
+  margin-left: 20px;
+  font-size: small;
+  color: rgb(0, 102, 0);
+}
+
+img {
+  border: 5px solid white;
+  outline: 2px solid black;
+  float: left;
+  width: 30%;
+  margin-right: 25px;
+  margin-bottom: 25px;
+  filter: drop-shadow(1px 1px 8px #766f6f);
+}
+
+section img {
+  float: right;
+  width: 30%;
+}
+
+blockquote {
+  font-style: italic;
+  color: rgb(94, 91, 91);
+  float: right;
+  width: 40%;
+  margin-top: -15px;
+}
+
+blockquote footer {
+  text-align: right;
+}
+
+.half-paragraph {
+  /* float: left; */
+  width: 50%;
+  border-right: 2px solid lightgray;
+}
