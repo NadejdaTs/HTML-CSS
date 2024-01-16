@@ -4,6 +4,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  margin: 0 auto;
 }
 
 header,
@@ -14,7 +15,8 @@ footer {
   background-color: #fff;
   border-radius: 0.4rem;
   color: #000;
-  /* justify-content: flex-start; */
+  filter: drop-shadow(1px 2px 3px #b1ac9f);
+  height: 60px;
 }
 
 header,
@@ -23,9 +25,18 @@ footer {
 }
 
 main {
-  flex: 8 1 40rem;
+  flex-shrink: 2;
+  flex-grow: 2;
+  height: 250px;
 }
 
 aside {
-  flex: 2 1 20rem;
+  flex-shrink: 1;
+  flex-grow: 1;
+  height: 250px;
+}
+
+p {
+  margin: -15px;
+  text-transform: uppercase;
 }

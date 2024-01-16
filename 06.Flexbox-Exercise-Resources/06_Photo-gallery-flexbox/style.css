@@ -1,0 +1,28 @@
+.gallery {
+  background-color: #eeeeee;
+}
+
+.gallery ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.gallery ul li {
+  display: flex;
+  background-color: white;
+  margin: 1rem;
+  padding: 0.2rem;
+
+  height: 28rem;
+
+  align-items: center;
+  justify-content: center;
+  border: 0.5rem solid black;
+  box-shadow: 0 0 1.1rem black, inset 0 0 5px;
+}
+
+.gallery ul li img {
+  width: 90%;
+}

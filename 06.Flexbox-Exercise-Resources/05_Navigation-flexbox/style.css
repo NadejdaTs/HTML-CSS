@@ -1,0 +1,29 @@
+body {
+  font-family: Georgia, serif;
+  margin: 50px;
+}
+
+header {
+  border-bottom: 2px solid rgb(0, 0, 0);
+  display: flex;
+  font-family: sans-serif;
+}
+
+ul {
+  display: flex;
+  width: 79%;
+  justify-content: flex-end;
+}
+
+li {
+  color: rgb(0, 153, 0);
+  text-align: right;
+  width: 10%;
+  margin: 10px;
+  font-size: 15px;
+}
+
+header p {
+  text-transform: uppercase;
+  font-size: 28px;
+}
