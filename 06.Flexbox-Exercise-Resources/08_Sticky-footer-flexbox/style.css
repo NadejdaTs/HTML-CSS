@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Helvetica, sans-serif;
+  background-color: rgb(238, 238, 238);
+}
+
+header {
+  border-bottom: 0.2rem solid black;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 25px;
+  margin: 10px 20px 10px 20px;
+}
+
+h2 {
+  font-family: none;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+main {
+  flex-grow: 1;
+  margin: 20px 20px 10px 20px;
+}
+
+footer {
+  flex-shrink: 0;
+  color: rgb(255, 255, 255);
+  background-color: rgb(102, 102, 102);
+  margin: 20px;
+  padding: 5px;
+}
