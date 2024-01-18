@@ -9,27 +9,25 @@ body {
   gap: 10px;
   align-items: center;
   height: calc(50vh + 40vh);
+  background-color: aqua;
+  /* margin: 5px; */
+  /* background-color: rgb(238, 238, 238); */
   /* height: 100vh; */
 }
 
 .container ul {
   display: flex;
-  /* border-radius: 0.5rem; */
+  /* gap: 15px; */
+  background-color: rgb(238, 238, 238);
+  /* height: 40vh; */
 }
 
 .container ul li {
   display: flex;
   flex: 0 0 20%;
+  background-color: red;
+  /* justify-content: space-between; */
 }
-
-/* .container a {
-  display: flex;
-  position: relative;
-  overflow: hidden;
-  border-radius: 0.5rem;
-  padding: 0 0.5rem;
-  margin: 1rem;
-} */
 
 .container img {
   display: block;
@@ -39,11 +37,14 @@ body {
   height: 150%;
   flex: 0 0 20%;
   flex-shrink: 1;
+  background-color: blue;
+  padding: 1px;
 }
 
-.container img:nth-child(2) {
-  padding: 0 8px;
+.container ul li img:nth-child(2) {
+  /* padding: 0 8px; */
   background-color: black;
-  flex: 2 0 80%;
-  margin-right: 1rem;
+  padding: 1px;
+  /* width: 220%  ; */
+  /* height: 150%; */
 }
