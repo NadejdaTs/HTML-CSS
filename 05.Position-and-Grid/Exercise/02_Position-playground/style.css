@@ -1,27 +1,16 @@
-/* @import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css"); */
-
 body {
   padding: 0;
   margin: 0;
+  width: 1000px;
 }
 
-.card {
-  display: block;
-  position: absolute;
-  left: 700px;
-}
-
-i {
+card {
   position: relative;
-  color: white;
-  font-size: x-large;
-  left: -50px;
-  top: -20px;
 }
 
-.viewport {
-  height: 600px;
-  padding: 30px;
+img {
+  position: absolute;
+  text-align: center;
 }
 
 .viewport:nth-child(odd) {
