@@ -25,13 +25,11 @@ footer {
 }
 
 main {
-  flex-shrink: 2;
   flex-grow: 2;
   height: 250px;
 }
 
 aside {
-  flex-shrink: 1;
   flex-grow: 1;
   height: 250px;
 }

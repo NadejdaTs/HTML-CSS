@@ -1,0 +1,32 @@
+* {
+  font-family: verdana;
+  margin: 0;
+}
+
+body {
+  background: #eee;
+  color: #333;
+}
+
+nav {
+  display: flex;
+  border-bottom: 2px solid gray;
+}
+
+nav ul {
+  display: flex;
+  padding: 0;
+  margin-bottom: 20px;
+  width: 650px;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  list-style-type: none;
+  min-width: 70px;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+}

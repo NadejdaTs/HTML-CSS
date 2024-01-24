@@ -11,8 +11,14 @@ h2 {
 
 section {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   max-width: 70vw;
+}
+
+article {
+  width: 20vw;
+  box-sizing: border-box;
+  padding-left: 10px;
 }
 
 h2,
