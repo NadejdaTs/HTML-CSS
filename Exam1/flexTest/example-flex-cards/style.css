@@ -27,7 +27,6 @@ body {
 
 ul li {
   width: 120px;
-  align-items: stretch;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0 0 15px rgb(117, 114, 114);

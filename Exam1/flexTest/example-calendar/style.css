@@ -24,7 +24,7 @@ body {
 
 span {
   border: 1px solid gray;
-  width: 120px;
+  width: 119px;
   height: 100px;
   display: flex;
   flex-direction: column;

@@ -1,0 +1,21 @@
+body {
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(80vh + 90px);
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 20px rgb(150, 146, 146);
+  border-radius: 5px;
+  padding: 20px;
+  width: 350px;
+  height: 90px;
+}
+
+h1 {
+  font-size: 25px;
+  margin-top: -5px;
+}
