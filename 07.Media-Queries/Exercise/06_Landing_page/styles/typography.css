@@ -1,0 +1,89 @@
+root {
+  --bgr-col: #fcfcfc;
+  --header-color: #94288f;
+  --list-color: #616e7e;
+  /* --header-color:var(--bgr-col); */
+  --text-color: #1f272c;
+  --sign-up-color: #68347b;
+}
+
+body {
+  font-family: "Roboto Slab", serif;
+  /* background-color: var(--bgr-col); */
+  /* background-color: #fcfcfc; */
+}
+
+header h2 {
+  font-weight: 700;
+  font-size: 30px;
+  /* color: var(--header-color); */
+  color: #94288f;
+}
+
+header p {
+  text-transform: uppercase;
+  font-family: cursive;
+}
+
+header ul li a {
+  color: #616e7e;
+  font-weight: 600;
+}
+
+.need-a-website button {
+  background-color: #fcfcfc;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+
+/* Our team */
+
+.imgs-of-ceo div .name p:first-of-type {
+  font-weight: 1000;
+}
+
+.imgs-of-ceo div .name p:nth-of-type(2) {
+  font-weight: 300;
+}
+
+.imgs-of-ceo div p:last-of-type {
+  font-weight: 600;
+  text-align: center;
+  font-style: italic;
+}
+
+/* sign-up */
+.sign-up {
+  background-color: #68347b;
+  color: white;
+  letter-spacing: 0.1rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* Testimonials */
+
+.testimonials div p {
+  font-weight: 600;
+}
+
+.testimonials div .name p:first-of-type {
+  font-weight: 1000;
+}
+
+.testimonials div .name p:last-of-type {
+  font-weight: 100;
+}
+
+/* footer */
+footer {
+  background-color: #ffffff;
+}
+
+footer .first p,
+footer .contacts p,
+footer .first ul li a,
+footer .second ul li a {
+  font-weight: 700;
+  color: black;
+}
