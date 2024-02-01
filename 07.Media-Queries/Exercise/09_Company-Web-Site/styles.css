@@ -9,45 +9,62 @@
 }
 
 body {
-/* TODO
+  /* TODO
 CSS Grid. Display grid. 
 Define the grid areas. 
 Create two unequal columns that sits next to each other 
 */
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0px;
+  font-family: Arial, sans-serif;
 }
 
-/* TODO Reference the grid area */
-/* TODO Reference the grid area */
-/* TODO Reference the grid area */
-/* TODO Reference the grid area */
-/* TODO Reference the grid area */
-
-body {
-/* TODO style the body*/
-}
-
-header { 
-/* TODO style the header */
+header {
+  grid-column: 1 / span 3;
+  /* aspect-ratio: 1 / 1; */
+  background-color: #1abc9c;
+  color: white;
+  text-align: center;
+  padding: 60px;
+  margin: 0;
 }
 
 nav {
-/* TODO style the navigation bar*/
+  grid-column: 1 / span 3;
+  background-color: #333;
+  padding: 16px 26px;
 }
 
 nav a {
-/* TODO style the navigation bar links*/
+  grid-column: 1 / span 3;
+  color: white;
+  padding: 16px 20px;
+  text-align: left;
+  text-decoration: none;
 }
 
 aside {
-/* TODO style the sidebar*/
+  /* grid-column: 1 / span 1; */
+  /* aspect-ratio: auto 3/7; */
+  /* grid-row: 3; */
+  aspect-ratio: 1/1.5;
+  background-color: #f1f1f1;
+  padding: 20px;
 }
 
 main {
-/* TODO style the main*/
+  /* grid-column: 2 / span 2; */
+  aspect-ratio: 3/1;
+  padding: 20px;
 }
 
-footer{
-/* TODO style the footer*/
+footer {
+  grid-column: 1 / span 3;
+  background-color: #ddd;
+  padding: 20px;
+  text-align: center;
 }
 
 /* TODO Responsive layout - when the screen is less than 700px wide, 
@@ -55,4 +72,3 @@ make the two columns stack on top of each other instead of next to each other */
 
 /* TODO Responsive layout - If the screen is smaller than 700px, 
 display the navigation bar links as block and center the text */
-

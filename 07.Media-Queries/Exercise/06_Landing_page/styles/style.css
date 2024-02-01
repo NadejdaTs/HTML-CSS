@@ -188,7 +188,6 @@ footer .first p {
 
 footer .contacts {
   display: flex;
-  /* width: 500px; */
 }
 
 footer .contacts .nested-i {
@@ -196,31 +195,96 @@ footer .contacts .nested-i {
   top: 25px;
   right: 5px;
   width: 15px;
-  /* margin: 25px 5px 0 0; */
 }
 
-@media screen and (max-width: 900px) {
-  body {
-    width: 850px;
-  }
-
-  header {
-    width: 850px;
-  }
-
+@media screen and (max-width: 1100px) {
   header h2 {
     font-size: 35px;
-    font-weight: 700;
   }
 
   header p {
     transform: scaleX(0.55);
     transform-origin: 0 100%;
-    width: 400px;
+    font-size: 16px;
   }
 
   header ul {
-    grid-column: 0;
-    grid-row: 0;
+    display: none;
+  }
+
+  .open-menu {
+    position: absolute;
+    right: 150px;
+    top: 50px;
+    font-size: 20px;
+  }
+
+  .need-a-website {
+    padding: 50px 50px;
+    margin: 0 10px;
+  }
+
+  .need-a-website h1 {
+    font-size: 32px;
+  }
+  .need-a-website p {
+    font-size: 20px;
+  }
+
+  .need-a-website i {
+    font-size: 150px;
+  }
+
+  .imgs-of-ceo,
+  .testimonials {
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+    margin-left: 0;
+    margin-right: 0;
+    justify-items: center;
+    column-gap: 0px;
+  }
+
+  .imgs-of-ceo div,
+  .testimonials div {
+    margin: 0;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  footer .purple {
+    grid-column: 1 / span 4;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  footer .first {
+    grid-column: 1 / span 2;
+  }
+
+  footer .contacts {
+    grid-column: 1 / span 2;
+  }
+
+  footer .first ul,
+  footer .first p,
+  footer .second ul {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  footer .second ul {
+    padding-top: 30px;
+  }
+
+  footer .first p {
+    font-size: 22px;
+  }
+
+  footer .contact-header {
+    font-size: 22px;
   }
 }

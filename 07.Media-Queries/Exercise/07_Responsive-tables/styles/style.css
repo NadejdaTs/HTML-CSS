@@ -1,0 +1,69 @@
+body {
+  background-color: #eee;
+}
+
+table {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
+  border-collapse: collapse;
+  margin-top: 5%;
+}
+
+.header-of-table {
+  background-color: rgb(9, 39, 83);
+  color: white;
+  text-align: start;
+}
+
+.header-of-table th {
+  text-align: start;
+}
+
+.body-of-table {
+  background-color: #eee;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+}
+
+.body-of-table tr td {
+  width: 33%;
+}
+
+.body-of-table tr:nth-child(even) {
+  background-color: white;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    font-size: 25px;
+  }
+
+  .header-of-table {
+    display: none;
+  }
+
+  td {
+    text-align: left;
+    display: block;
+  }
+
+  td:before {
+    content: attr(data-title) "\00a0\00a0\00a0";
+    float: left;
+  }
+
+  .body-of-table tr td {
+    width: 100%;
+  }
+}
