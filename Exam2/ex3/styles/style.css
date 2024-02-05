@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Sans|PT+Serif");
+
+:root {
+  --red: #d01919;
+  --gray: #efefef;
+  --gray-text: #c5c2c7;
+}
+body {
+  font-family: "PT Sans", sans-serif;
+}
+
+.red-line {
+  background-color: var(--red);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 1rem 3rem;
+}
+
+.red-line i {
+  color: white;
+  padding-right: 5px;
+}
+
+.navigation img {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background-position: right;
+  object-fit: cover;
+}
+
+.navigation ul {
+  position: absolute;
+  bottom: 970px;
+  left: 48%;
+  display: flex;
+  gap: 35px;
+}
+
+.navigation li {
+  list-style-type: none;
+}
+
+.navigation li a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+  font-size: 12px;
+}
+
+.navigation div {
+  position: absolute;
+  bottom: 780px;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.navigation div h1 {
+  font-size: 32px;
+  letter-spacing: 5px;
+  margin-bottom: 18px;
+}
+
+.navigation div p {
+  font-size: 11px;
+  opacity: 0.7;
+  width: 320px;
+  margin-left: 350px;
+  margin-bottom: 20px;
+}
+
+.navigation div a {
+  text-decoration: none;
+  background-color: var(--red);
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 5px 15px;
+  border-radius: 4px;
+}
+
+/*  first part*/
+.part {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 35px;
+  padding: 0;
+  margin: 50px 0 60px 0;
+}
+
+.part div:first-child {
+  grid-column: 1 / span 3;
+  text-align: center;
+  display: inline;
+}
+
+.part div:first-child hr {
+  width: 3%;
+  border: 1px solid var(--red);
+}
+
+.part div:not(div:first-child) {
+  width: 70%;
+  margin-left: 15%;
+  text-align: center;
+}
+
+.part div:not(div:first-child) h5 {
+  color: var(--red);
+}
+
+.part img {
+  width: 14%;
+  margin: auto;
+}
+
+.second-part img {
+  width: 70%;
+  margin: auto;
+}
+
+/* second part */
+
+.second-part {
+  background-color: var(--gray);
+  padding: 30px 0;
+  margin: 0;
+}
+
+.second-part p {
+  color: var(--gray-text);
+  font-size: 13px;
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+}
+
+h6 {
+  margin: 10px 0 5px 0;
+  /* padding: 0; */
+}
+
+.second-part h5 {
+  font-size: 10px;
+  margin: 0 0 15px 0;
+}
+
+/* footer */
+footer {
+  background-color: var(--red);
+  text-align: center;
+  padding: 3px;
+}
