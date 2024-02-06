@@ -1,0 +1,118 @@
+@media screen and (max-width: 600px) {
+  /* header */
+  header nav {
+    display: block;
+    text-align: center;
+  }
+
+  header nav ul li {
+    display: block;
+    height: 25px;
+  }
+
+  header nav img {
+    padding-bottom: 10px;
+  }
+
+  header {
+    background: url(./images/header-pic.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+  }
+
+  .header-title {
+    padding-top: 15px;
+  }
+
+  .header-title h1 {
+    font-size: 39px;
+  }
+
+  .header-title p {
+    font-size: 13px;
+  }
+
+  /* About us */
+
+  .about-us {
+    height: 260px;
+    padding: 30px 0;
+  }
+
+  .about-us p:first-of-type {
+    font-size: 13px;
+    padding-bottom: 30px;
+  }
+
+  .about-us p:last-of-type {
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  /* Our Fabulous Team */
+  .team-description ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .team-description ul li img {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* Choose us */
+  .choose-us ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .choose-us ul li p {
+    width: 60%;
+    margin-left: 20%;
+  }
+
+  .choose-us ul li img {
+    width: 15%;
+    height: 15%;
+  }
+
+  .choose-us ul li h4 {
+    font-size: 15px;
+  }
+
+  .choose-us ul li p {
+    font-size: 13px;
+  }
+
+  /* Blog news */
+  .blog-news ul {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+
+  .blog-news ul li {
+    width: 70%;
+    margin-left: 15%;
+  }
+
+  .blog-news ul li h4 {
+    font-size: 11px;
+    font-weight: bold;
+  }
+
+  .blog-news ul li p {
+    font-size: 11px;
+  }
+
+  .blog-news h3 {
+    font-size: 20px;
+  }
+  .blog-news p {
+    font-size: 13px;
+  }
+}

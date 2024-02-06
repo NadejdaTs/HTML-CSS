@@ -1,0 +1,192 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+
+:root {
+  --image: url("../image/image.jpg");
+  --white: white;
+  --light-bej-col: #f2f0f3;
+  --dark-bej-col: #bab1ad;
+  --green-btn: #67784d;
+  --header-text: #6f655a;
+  --h1-col: #363434;
+  --par-text: #9fa6b6;
+  --pause-col: #918a86;
+  --border-col: #979797;
+}
+
+body {
+  font-family: "Abril Fatface", serif;
+  font-family: "Roboto Flex", sans-serif;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "main aside"
+    "footer aside";
+}
+
+h1,
+h2 {
+  font-family: "Abril Fatface", serif;
+}
+
+/* header */
+header {
+  grid-area: header;
+  background-image: var(--image);
+  background-size: cover;
+  background-position: center;
+  height: 66vh;
+  position: relative;
+}
+
+.design-part {
+  width: 170px;
+  height: 130px;
+  background-color: transparent;
+  box-shadow: 1.5px 1.5px 3px 2px var(--header-text);
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  padding: 15px 15px;
+}
+
+.design-part h2 {
+  width: 100px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  padding-bottom: 7px;
+  border-bottom: 1px solid white;
+}
+
+.design-part p {
+  font-size: 11px;
+  padding-top: 7px;
+}
+
+.text-part {
+  width: 240px;
+  height: 220px;
+  background: rgb(157, 147, 139);
+  background: linear-gradient(
+    90deg,
+    rgba(157, 147, 139, 1) 39%,
+    rgba(201, 199, 198, 1) 74%
+  );
+  color: var(--white);
+  padding: 20px 15px;
+  box-shadow: 1.5px 1.5px 3px 2px var(--header-text);
+  background-color: transparent;
+  position: absolute;
+  top: 160px;
+  right: 30px;
+}
+
+.text-part i {
+  display: block;
+  color: var(--pause-col);
+  text-align: end;
+  margin: 10px 0 12px 0;
+}
+
+.text-part p {
+  font-size: 13px;
+  text-align: end;
+  line-height: 1.4;
+  text-shadow: 1px 1px 2px var(--header-text);
+}
+
+/* main */
+main {
+  grid-area: main;
+  background-color: var(--light-bej-col);
+  padding: 30px 50px;
+}
+
+main h1 {
+  text-transform: uppercase;
+  font-size: 25px;
+}
+
+main p {
+  margin-top: 25px;
+  font-size: 15px;
+}
+
+main span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* aside */
+aside {
+  grid-area: aside;
+  background-color: var(--dark-bej-col);
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 150px;
+}
+
+aside p:first-child {
+  font-size: 50px;
+  font-weight: lighter;
+  color: white;
+  line-height: 0.9;
+}
+
+aside p:last-child {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* footer */
+footer {
+  grid-area: footer;
+  background-color: var(--light-bej-col);
+  padding: 10px 30px;
+  border-top: 2px solid var(--border-col);
+}
+
+footer h2 {
+  text-transform: uppercase;
+  margin-top: -60px;
+  margin-left: 20px;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 0 25px 20px;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer input {
+  width: 270px;
+  background-color: var(--dark-bej-col);
+  border: none;
+  border-radius: 6px;
+  padding: 5px 10px;
+  margin: 0 0 0 20px;
+}
+
+footer input::placeholder {
+  color: var(--white);
+  font-size: 13px;
+}
+
+footer a {
+  text-decoration: none;
+  background-color: var(--green-btn);
+  border: 1px solid var(--green-btn);
+  border-radius: 6px;
+  color: var(--white);
+  padding: 7px 15px;
+  font-size: 15px;
+}
