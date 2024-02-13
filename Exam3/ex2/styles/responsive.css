@@ -1,0 +1,46 @@
+@media screen and (max-width: 600px) {
+  header ul,
+  .div-logo,
+  .options article a {
+    display: none;
+  }
+  .logo-center {
+    margin-left: calc(50% - 5px);
+    text-align: center;
+  }
+  header h3 {
+    font-size: 10px;
+  }
+
+  header h1 {
+    font-size: 18px;
+  }
+  .button-header {
+    font-size: 10px;
+  }
+  .options {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* padding-top: 0; */
+  }
+  .options article {
+    height: 25px;
+    text-align: center;
+    /* width: 300px; */
+    
+    /* font-size: 1px; */
+  }
+  .options article h4 {
+    font-size: 10px;
+  }
+
+  
+  /* .options article h4 {
+    padding-left: 15px;
+    padding-top: 20px;
+    font-weight: lighter;
+    font-size: 20px;
+  }
+} */

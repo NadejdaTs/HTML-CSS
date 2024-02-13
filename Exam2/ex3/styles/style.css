@@ -33,13 +33,13 @@ body {
 
 .navigation ul {
   position: absolute;
-  bottom: 970px;
+  top: 50px;
   left: 48%;
   display: flex;
   gap: 35px;
 }
 
-.navigation li {
+.navigation ul li {
   list-style-type: none;
 }
 
@@ -52,7 +52,7 @@ body {
 
 .navigation div {
   position: absolute;
-  bottom: 780px;
+  bottom: 700px;
   color: white;
   width: 100%;
   text-align: center;
@@ -67,9 +67,11 @@ body {
 .navigation div p {
   font-size: 11px;
   opacity: 0.7;
-  width: 320px;
-  margin-left: 350px;
   margin-bottom: 20px;
+}
+
+.navigation div p:first-of-type {
+  margin-bottom: 0;
 }
 
 .navigation div a {
