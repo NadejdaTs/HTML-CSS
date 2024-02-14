@@ -1,0 +1,169 @@
+@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
+
+:root {
+  --gray: #54546d;
+  --purple: #9a5dc6;
+  --dark-green: #039b3d;
+  --light-green: #4ad57f;
+  --green-border: #96d9af;
+  --gray-border: #a0a0ac;
+  --dark-blue: #4d6e8c;
+  --light-blue: #619acf;
+  --dark-purple: #4b38a6;
+  --light-purple: #8b7ce0;
+  --d-text-color: #6a6a7c;
+  --l-text-color: #d3c8ba;
+  --f-color: #8a879a;
+  --h-color: #ffffff;
+}
+
+body {
+  /* font-family: Lato; */
+  font-family: Montserrat;
+}
+h2,
+h3 {
+  /* font-family: Montserrat; */
+}
+/* Header */
+header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+header div {
+  display: flex;
+}
+header div img {
+  width: 50px;
+  height: 45px;
+}
+
+header p {
+  grid-column: 1 / span 2;
+  background-color: var(--gray);
+  color: var(--h-color);
+  padding: 80px 0 200px 0;
+  text-align: center;
+  font-size: 30px;
+}
+ul {
+  display: flex;
+  gap: 10px;
+}
+ul li {
+  list-style-type: none;
+}
+ul li a {
+  /* color: var(--h-color); */
+  text-decoration: none;
+  font-size: 10px;
+}
+
+/* Tree Boxes */
+.three-boxes {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  position: absolute;
+  top: 220px;
+  left: 60px;
+}
+
+.three-boxes div {
+  width: 300px;
+  height: 260px;
+  background-color: white;
+  border: 1px solid var(--gray-border);
+  border-radius: 6px;
+  text-align: center;
+  padding: 25px 0;
+}
+
+.three-boxes div .first {
+  padding: 0 15px;
+  height: 150px;
+}
+
+.three-boxes div .first h2 {
+  font-size: 18px;
+}
+
+.three-boxes div .first p {
+  font-size: 11px;
+}
+.three-boxes div .first p:first-of-type {
+  padding-bottom: 15px;
+}
+
+.three-boxes div:first-of-type .second {
+  /* background-color: var(--dark-green); */
+  background: rgb(3, 155, 61);
+  background: linear-gradient(
+    90deg,
+    rgba(3, 155, 61, 1) 0%,
+    rgba(74, 213, 127, 1) 68%
+  );
+  color: white;
+  padding-bottom: 19px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.three-boxes div:first-of-type .second p:first-of-type {
+  font-size: 17px;
+  padding: 10px 0;
+}
+
+.three-boxes div:first-of-type .second p {
+  font-size: 12px;
+}
+
+.three-boxes div:nth-of-type(2) .second {
+  background: rgb(77, 110, 140);
+  background: linear-gradient(
+    90deg,
+    rgba(77, 110, 140, 1) 0%,
+    rgba(97, 154, 207, 1) 68%
+  );
+  color: white;
+  padding-bottom: 23px;
+  display: flex;
+}
+
+.three-boxes div:last-of-type .second {
+  background: rgb(75, 56, 166);
+  background: linear-gradient(
+    90deg,
+    rgba(75, 56, 166, 1) 0%,
+    rgba(139, 124, 224, 1) 68%
+  );
+  color: white;
+  padding-bottom: 23px;
+}
+
+/* table part */
+
+.table-part {
+  padding-top: 200px;
+}
+/* Finances */
+.finance {
+  display: grid;
+  grid-template-columns: 70% 1fr;
+}
+.finance div {
+  grid-column: 1 / span 1;
+}
+
+.postbank {
+  grid-column: 2 / span 1;
+}
+
+/* footer */
+footer {
+  background-color: var(--gray);
+  color: var(--f-color);
+  padding: 15px 0;
+  text-align: center;
+}
