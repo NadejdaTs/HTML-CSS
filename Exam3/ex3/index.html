@@ -4,17 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fees</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header>
-       <div>
-          <img src="./images/softuni-logo.png" alt="">
-          <span>SoftUni Creative Logo</span>
+      <div>
+        <img src="./images/softuni-logo.png" alt="" />
       </div>
       <ul>
         <li><a href="">ЗА НАС</a></li>
@@ -26,7 +28,7 @@
     </header>
     <main>
       <section class="three-boxes">
-        <div>
+        <div class="first-box">
           <section class="first">
             <h2>Design Basics</h2>
             <p>Подготвителен курс</p>
@@ -37,7 +39,7 @@
             <p>* 50 лв. такса за приемен изпит</p>
           </section>
         </div>
-        <div>
+        <div class="second-box">
           <section class="first">
             <h2>Fundamentals Program</h2>
             <p>
@@ -47,13 +49,17 @@
             <p>Възможност за заплащане на таксата на 2 равни вноски.</p>
           </section>
           <section class="second">
+            <div>
               <p>680 лв.</p>
               <p>присъствено за 6 курса</p>
+            </div>
+            <div>
               <p>620 лв.</p>
               <p>онлайн за 6 курса</p>
+            </div>
           </section>
         </div>
-        <div>
+        <div class="third-box">
           <section class="first">
             <h2>Professional Program</h2>
             <p>
@@ -66,10 +72,14 @@
             </p>
           </section>
           <section class="second">
+            <div>
               <p>330 лв.</p>
               <p>присъствено за модул</p>
+            </div>
+            <div>
               <p>290 лв.</p>
               <p>онлайн за модул</p>
+            </div>
           </section>
         </div>
       </section>
@@ -85,21 +95,43 @@
         <table>
           <tbody>
             <tr>
-              Присъствие в учебните зали на всички занятия от програмата
+              <td>
+                Присъствие в учебните зали на всички занятия от програмата
+              </td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-times"></i></td>
             </tr>
-            <i class="fas fa-check"></i>
-            <i class="fas fa-times"></i>
             <tr>
-              Възможност за личен контакт с преподавателя и курсистите на живо
+              <td>
+                Възможност за личен контакт с преподавателя и курсистите на живо
+              </td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-times"></i></td>
             </tr>
-            <tr>Онлайн обучение в реално време и възможност за въпроси</td>
             <tr>
-              Доживотен достъп до видео записите и учебните ресурси от всични
-              занятия
+              <td>Онлайн обучение в реално време и възможност за въпроси</td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
             </tr>
-            <tr>Издаване на държавно признати удостоверения от МОН</td>
             <tr>
-              Достъп до кариерен център и съдействие за стартиране на работа
+              <td>
+                Доживотен достъп до видео записите и учебните ресурси от всични
+                занятия
+              </td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Издаване на държавно признати удостоверения от МОН</td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>
+                Достъп до кариерен център и съдействие за стартиране на работа
+              </td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
             </tr>
           </tbody>
         </table>
@@ -120,7 +152,7 @@
             СофтУни и при последващ разговор със служител на банката, да се
             предостави студентски номер.
           </p>
-          </div>
+        </div>
         <img class="postbank" src="./images/postbank-logo.png" alt="" />
       </section>
     </main>

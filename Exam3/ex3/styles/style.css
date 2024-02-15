@@ -15,6 +15,9 @@
   --l-text-color: #d3c8ba;
   --f-color: #8a879a;
   --h-color: #ffffff;
+  --red: #fc4f53;
+  --table-light: #f8f8f8;
+  --table-dark: #e6e6e6;
 }
 
 body {
@@ -31,73 +34,100 @@ header {
   grid-template-columns: 1fr 1fr;
 }
 
-header div {
-  display: flex;
-}
 header div img {
-  width: 50px;
-  height: 45px;
+  margin-left: 60px;
 }
 
 header p {
   grid-column: 1 / span 2;
   background-color: var(--gray);
-  color: var(--h-color);
-  padding: 80px 0 200px 0;
+  color: white;
   text-align: center;
-  font-size: 30px;
+  padding: 50px 0 150px 0;
+  font-size: 20px;
 }
+
+/* List */
 ul {
   display: flex;
   gap: 10px;
+  margin-left: 35%;
 }
 ul li {
   list-style-type: none;
 }
 ul li a {
-  /* color: var(--h-color); */
   text-decoration: none;
   font-size: 10px;
+  font-weight: 600;
+  color: var(--d-text-color);
 }
 
-/* Tree Boxes */
+/* Three boxes */
 .three-boxes {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  gap: 15px;
   position: absolute;
-  top: 220px;
-  left: 60px;
+  top: 200px;
+  left: 10%;
+  width: 80%;
+  text-align: center;
 }
 
-.three-boxes div {
-  width: 300px;
-  height: 260px;
+.three-boxes h2 {
+  font-size: 17px;
+  padding-bottom: 10px;
+}
+
+.three-boxes p {
+  font-size: 10px;
+}
+
+.three-boxes p:nth-of-type(2) {
+  padding: 8px;
+}
+
+.three-boxes .first-box,
+.three-boxes .second-box,
+.three-boxes .third-box {
+  height: 220px;
   background-color: white;
   border: 1px solid var(--gray-border);
   border-radius: 6px;
-  text-align: center;
-  padding: 25px 0;
 }
 
-.three-boxes div .first {
-  padding: 0 15px;
+.three-boxes .second-box .second,
+.three-boxes .third-box .second {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.first {
   height: 150px;
+  padding: 15px 10px 20px 10px;
 }
 
-.three-boxes div .first h2 {
-  font-size: 18px;
+.second {
+  padding: 13px 0 10px 0;
 }
 
-.three-boxes div .first p {
-  font-size: 11px;
-}
-.three-boxes div .first p:first-of-type {
-  padding-bottom: 15px;
+.second div {
+  padding: 0 9px;
 }
 
-.three-boxes div:first-of-type .second {
-  /* background-color: var(--dark-green); */
+.second:nth-of-type(2) div:first-of-type,
+.second:nth-of-type(3) div:first-of-type {
+  border-right: 1px solid white;
+}
+
+.second p:first-of-type {
+  font-size: 13px;
+}
+
+/* color boxes */
+.first-box .second {
   background: rgb(3, 155, 61);
   background: linear-gradient(
     90deg,
@@ -105,21 +135,12 @@ ul li a {
     rgba(74, 213, 127, 1) 68%
   );
   color: white;
-  padding-bottom: 19px;
+  height: 68px;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
 }
 
-.three-boxes div:first-of-type .second p:first-of-type {
-  font-size: 17px;
-  padding: 10px 0;
-}
-
-.three-boxes div:first-of-type .second p {
-  font-size: 12px;
-}
-
-.three-boxes div:nth-of-type(2) .second {
+.second-box .second {
   background: rgb(77, 110, 140);
   background: linear-gradient(
     90deg,
@@ -127,11 +148,12 @@ ul li a {
     rgba(97, 154, 207, 1) 68%
   );
   color: white;
-  padding-bottom: 23px;
-  display: flex;
+  height: 68px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
-.three-boxes div:last-of-type .second {
+.third-box .second {
   background: rgb(75, 56, 166);
   background: linear-gradient(
     90deg,
@@ -139,31 +161,97 @@ ul li a {
     rgba(139, 124, 224, 1) 68%
   );
   color: white;
-  padding-bottom: 23px;
+  height: 68px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 
-/* table part */
+button {
+  background-color: var(--purple);
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 5px 15px;
+  font-size: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
 
+/* Table part */
 .table-part {
-  padding-top: 200px;
+  padding-top: 150px;
 }
-/* Finances */
+
+.table-part h2 {
+  padding: 15px 160px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.table-part p {
+  padding: 0 160px;
+  font-size: 12px;
+}
+
+table {
+  background-color: var(--table-light);
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 25px;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+table tr:nth-child(odd) {
+  background-color: var(--table-dark);
+}
+
+td {
+  padding: 10px;
+  border-color: transparent;
+}
+
+.fa-check {
+  color: var(--light-green);
+  font-size: 14px;
+  padding: 0 30px 0 20px;
+}
+
+.fa-times {
+  color: var(--red);
+  font-size: 16px;
+  padding: 0 20px;
+}
+
+/* Finance */
+
 .finance {
-  display: grid;
-  grid-template-columns: 70% 1fr;
+  display: flex;
+  padding: 50px 100px;
 }
-.finance div {
-  grid-column: 1 / span 1;
-}
-
-.postbank {
-  grid-column: 2 / span 1;
+.finance .postbank {
+  width: 200px;
+  height: 80px;
+  margin-top: 80px;
 }
 
-/* footer */
+.finance h2 {
+  font-weight: 500;
+}
+
+.finance p {
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+/* Footer */
 footer {
   background-color: var(--gray);
-  color: var(--f-color);
-  padding: 15px 0;
+  padding: 20px 0;
   text-align: center;
+}
+footer p {
+  color: white;
+  opacity: 0.5;
 }

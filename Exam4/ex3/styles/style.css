@@ -1,7 +1,16 @@
 @import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
 
+:root {
+  --green: #b2f1dd;
+  --dark-green: #16d18f;
+}
+
 body {
   font-family: "PT Sans", sans-serif;
+}
+
+header img {
+  background: linear-gradient(transparent, gray);
 }
 
 main {
@@ -16,6 +25,22 @@ main section:nth-child(1) {
 main section:nth-child(2) {
   grid-column: 2 / span 1;
   grid-row: 1;
+  padding: 20px 50px;
+}
+
+main section:nth-child(2) h2 {
+  font-size: 20px;
+}
+
+main section:nth-child(2) div {
+  display: flex;
+  gap: 25px;
+  margin: 10px 0;
+}
+
+.fa-check-circle {
+  color: var(--dark-green);
+  margin-top: 5px;
 }
 
 main section:nth-child(4) {
@@ -28,10 +53,20 @@ main section:nth-child(3) {
   grid-row: 2;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 60px;
+  width: 70%;
+  justify-self: center;
+  text-align: center;
 }
 
 main section:nth-child(3) h2 {
   grid-column: 1 / span 3;
+}
+
+main section:nth-child(3) p {
+  color: var(--dark-green);
+  font-size: 13px;
+  font-weight: 600;
 }
 
 header img {
@@ -67,13 +102,16 @@ header ul li:last-of-type {
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
   background-color: #b2f1dd;
   text-align: center;
 }
 
 footer h2 {
   grid-column: 1 / span 3;
+  padding-top: 20px;
 }
 footer span {
   grid-column: 2 / span 1;
+  padding-bottom: 20px;
 }
