@@ -10,7 +10,44 @@ body {
 }
 
 header img {
-  background: linear-gradient(transparent, gray);
+  /* background: linear-gradient(transparent, gray); */
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),
+                       rgba(0, 0, 0, 5.5))); */
+  /* opacity: 0.5; */
+}
+
+/* header {
+  background-color: black;
+  z-index: -1;
+} */
+
+header div {
+  position: absolute;
+  top: 130px;
+  left: 20%;
+  text-align: center;
+  color: white;
+}
+header div h1 {
+  letter-spacing: 2px;
+}
+
+header div button {
+  background-color: var(--dark-green);
+  color: white;
+  border: none;
+  padding: 3px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+
+header div div {
+  position: absolute;
+  top: 180px;
+  left: 230px;
 }
 
 main {
