@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+
+:root {
+  --bgr-col: #d5ebea;
+  --white: white;
+}
+
+body {
+  font-family: "Agbalumo";
+  text-align: center;
+}
+
+.card {
+  width: 875px;
+  background-color: var(--bgr-col);
+  border: 2px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+main {
+  background-color: var(--white);
+  padding: 30px 20px 0 20px;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+}
+
+main section:first-child {
+  border: 2px solid black;
+  padding: 14px;
+}
+
+main section:first-child p {
+  font-size: 12px;
+  margin-top: 20px;
+  text-align: start;
+  text-indent: 20px;
+}
+
+main section:nth-child(2) p {
+  font-size: 16px;
+  padding: 20px;
+  text-align: start;
+  text-indent: 30px;
+}
+
+aside {
+  background-color: white;
+  padding-top: 40px;
+}
+
+aside div {
+  background-color: black;
+  color: white;
+  width: 430px;
+}
+
+header h1 {
+  font-size: 37px;
+  width: 90%;
+  margin: 0 3%;
+  padding-top: 25px;
+  border-bottom: 2px solid black;
+}
+
+header p {
+  font-size: 20px;
+  width: 90%;
+  margin: 0 3%;
+  border-bottom: 2px solid black;
+}
+
+footer {
+  text-align: start;
+  padding: 20px 30px 10px 30px;
+  line-height: 2;
+  letter-spacing: 0.5px;
+  font-weight: 100;
+}

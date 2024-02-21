@@ -1,5 +1,3 @@
-@import url("https://use.fontawesome.com/releases/v5.10.2/css/all.css");
-
 :root {
   --green: #b2f1dd;
   --dark-green: #16d18f;
@@ -9,17 +7,24 @@ body {
   font-family: "PT Sans", sans-serif;
 }
 
-header img {
-  /* background: linear-gradient(transparent, gray); */
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.5),
-                       rgba(0, 0, 0, 5.5))); */
-  /* opacity: 0.5; */
+header {
+  background-image: linear-gradient(
+      to top,
+      transparent 0%,
+      rgb(100, 98, 98) 100%
+    ),
+    url(../image/computer-main.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
-/* header {
-  background-color: black;
-  z-index: -1;
-} */
+header {
+  height: 42vh;
+}
+header .text {
+  width: 350px;
+  margin-left: 80px;
+}
 
 header div {
   position: absolute;
@@ -30,6 +35,19 @@ header div {
 }
 header div h1 {
   letter-spacing: 2px;
+}
+
+header ul li {
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+header ul li:last-of-type {
+  margin-left: 200px;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
 }
 
 header div button {
@@ -46,8 +64,19 @@ header div button {
 
 header div div {
   position: absolute;
-  top: 180px;
-  left: 230px;
+  top: 210px;
+  left: 200px;
+  display: flex;
+}
+
+header div div i {
+  align-self: flex-end;
+  margin: 0 0 2px 5px;
+}
+
+header i {
+  color: white;
+  margin-right: 5px;
 }
 
 main {
